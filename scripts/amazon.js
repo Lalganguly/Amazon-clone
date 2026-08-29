@@ -37,7 +37,8 @@ products.forEach((product)=>{
     `<div class="product-container">
   <div class="product-image-container">
     <img class="product-image"
-      src="${product.image}
+      src="${product.image}">
+      </div>
 
   <div class="product-name limit-text-to-2-lines">
     ${product.name}
@@ -45,14 +46,14 @@ products.forEach((product)=>{
 
   <div class="product-rating-container">
     <img class="product-rating-stars"
-      src="images/rating/rating-${product.rating.stars*10}">
+      src="images/ratings/rating-${product.rating.stars*10}.png">
     <div class="product-rating-count link-primary">
       ${product.rating.count}
     </div>
   </div>
 
   <div class="product-price">
-   $${product.priceCents/100}
+   $${(product.priceCents/100).toFixed(2)}
   </div>
 
   <div class="product-quantity-container">

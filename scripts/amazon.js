@@ -1,5 +1,4 @@
-
-
+import{cart} from '../data/cart.js'
 let productHtml='';
 
 products.forEach((product)=>{
@@ -75,7 +74,7 @@ document.querySelectorAll('.js-add-to-cart')
       })
       
 
-      
+
       if(matchingItem){
         matchingItem.quantity+=1;
 
@@ -86,5 +85,13 @@ document.querySelectorAll('.js-add-to-cart')
         })
       }
       console.log(cart)
-    })
+
+      let totalItem=0
+      cart.forEach((item)=>{
+        totalItem+=item.quantity
+      })
+
+      document.querySelector('.js-totalItems').innerHTML=totalItem
+   })
+
   })

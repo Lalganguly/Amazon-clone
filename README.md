@@ -2,6 +2,13 @@
 
 A browser based shopping demo built with HTML, CSS, and vanilla JavaScript. It recreates the main flows of an Amazon style storefront: browsing products, adding items to a cart, selecting delivery options, placing an order, and viewing order and delivery tracking pages.
 
+## Get the project from GitHub
+
+```bash
+git clone https://github.com/souvikl-sarkar/Amazon-clone.git
+cd Amazon-clone
+```
+
 ## Features
 
 - Responsive product listing with product images, ratings, prices, and quantity controls.
